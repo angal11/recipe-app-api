@@ -8,4 +8,4 @@ services:
 before_script: pip install docker-compose
 
 script:
-  - docker-cpmpose run app sh -c "python manage.py test && flake8"
+  - docker-cpmpose run --rm app sh -c "python manage.py test && flake8"
